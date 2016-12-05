@@ -1,0 +1,80 @@
+html, body, section, div {
+	overflow: auto;
+}
+
+body { 
+	background-color: lightgray;
+	/*color: red;*/ 
+	font-family: "Open Sans",Arial,sans-serif;
+	/*line-height: 1.5;*/	
+	font-size: 1.6em;
+}
+
+section{
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 640px;
+	padding: 10px;
+}
+
+article{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%
+}
+
+.micereport{
+	width: 960px;
+	
+}
+
+.micephoto{
+	float: left;
+	width: 35%;
+
+}
+
+.micephoto img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.micedetails{
+	float: right;
+	width: 64%
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date] {
+	/*border: 2px solid black;*/
+	/*border-bottom: 2px solid red;*/
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	border-radius: 0 0 2px 0;
+	/*
+	border-left: 
+	border-top:
+	*/
+	border-style: outset;
+	font-size: .9em;
+	transition: 0.2s;
+}
+
+select{
+	padding: 1em;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=date]:focus {
+	border: 2px solid navy;
+	/*border-bottom: 2px solid red;*/
+	border-style: outset;
+	line-heigh: 1.5
+}
+
+canvas{
+border: 1px solid black;
+/*background:url(cutemice.png);*/
+}

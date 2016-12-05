@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+ 
+<link rel="stylesheet" href="style.css">
+
+<html>
+<head>
+
+
+<meta charset="UTF-8">
+<title>Mouse Form</title>
+
+<!-- for date picker -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+  
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+
+<section>
+<article>
+<form>
+
+<!--info for ALL views -->
+PI <br><input type="text" name="PI"> <br><br>
+Protocol <br><input type="text" name="Protocol"> <br><br>
+Rodent Type <br>
+<select name="rodent">
+	<option value="mouse">Mouse</option>
+	<option value="rat">Rat</option>
+	<option value="other">Other</option>
+</select> <br><br>
+Date of Birth<br> <input type="text" name="dob" id="datepicker"> <br><br>
+Sex <br><input type="radio" name="gender" value="male" checked> Male
+<input type="radio" name="gender" value="female"> Female<br><br>
+Building<br>
+<select name ="building">
+	<option value="bA" >buildingA</option>
+	<option value="bB">buildingB</option>
+	<option value="bC" >buildingC</option>
+</select><br><br>
+
+Cage Card Info <br><input type="text" name="cci"> <br><br>
+Lab Contact Name <br><input type="text" name="labcontactname"> <br><br>
+Lab Contact Email <br><input type="email" name="labcontactemail"> <br><br>
+Lab Contact Phone <br><input type="tel" name="labcontactphone"> <br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</section>
+</article>
+
+</body>
+
+
+
+</html> 
