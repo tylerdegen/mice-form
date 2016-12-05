@@ -2,6 +2,16 @@ html, body, section, div {
 	overflow: auto;
 }
 
+h2 {
+	text-align: center;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 body { 
 	background-color: lightgray;
 	/*color: red;*/ 
@@ -65,6 +75,15 @@ input[type=text], input[type=email], input[type=tel], input[type=date] {
 
 select{
 	padding: 1em;
+}
+
+.report {
+	padding: 0;
+	transition: 0.4s;
+}
+
+.report:hover {
+	background-color: #b3ffff;
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=date]:focus {
