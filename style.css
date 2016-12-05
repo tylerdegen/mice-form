@@ -83,7 +83,16 @@ select{
 }
 
 .report:hover {
-	background-color: #b3ffff;
+	background-color: #e6ffff;
+}
+
+.unchecked {
+	font-weight: bold;
+}
+
+.report a {
+	color: black;
+	text-decoration: none;
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=date]:focus {
