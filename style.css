@@ -95,6 +95,11 @@ select{
 	text-decoration: none;
 }
 
+.create-report {
+	text-align: center;
+	font-weight: bold;
+}
+
 input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=date]:focus {
 	border: 2px solid navy;
 	/*border-bottom: 2px solid red;*/
