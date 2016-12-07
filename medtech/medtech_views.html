@@ -22,14 +22,94 @@ $( function() {
 
 </head>
 
+<!--IDEALLY we'll eventually load this in with ajax or something -->
+<div class="toggle">
+<div class="overlay" style="display:none">
+
+<section class="micereport">
+	<h2>Rodent Report</h2>
+
+	<article class="center">
+		<ul>
+			<li>Rodent Type: Mouse</li>
+			<li>Sex: Male</li>
+			<li>Building: Hagerty</li>
+		</ul>
+	</article>
+
+	<article class="micephoto">
+    	<img src="miceaffected.png"></img>
+    </article>
+    <article class="micedetails">
+    	<ul>
+    		<li>Fur: Lesion</li>
+    		<li>Dystocia: Dead pup</li>
+    		<li>Action Taken: Separated to Cage 3</li>
+    		<li class="immediate">NEEDS IMMEDIATE ATTENTION</li>
+    	</ul>
+    </article>
+</section>
+
+<section>
+	<article>
+	
+	<h2>P(hysical?) E(valuation?)</h2>
+	
+	<textarea name="pe"></textarea>
+	
+	</article>
+</section>
+
+<section>
+<article>
+<form>
+	<h2>Treatment Plan</h2>
+	
+	Topical:
+	<select name="Topical">
+		<option value="TAO">TAO</option>
+		<option value="OTAO">OTAO</option>
+		<option value="Lanolin">Lanolin</option>
+		<option value="Caladyl">Caladyl</option>
+	</select><br>
+	
+	Systemic:
+	<select name="Systemic">
+		<option value="baytril">Baytril</option>
+		<option value="motrin">Motrin</option>
+		<option value="bupren">Bupren</option>
+	</select><br>
+	
+	...
+	
+	<br><br>
+	
+	Contact Name <br><input type="text" name="contactname"> <br>
+	Details <br><input type="text" name="details"> <br><br>
+	
+	Contact Name <br><input type="text" name="contactname"> <br>
+	Details <br><input type="text" name="details"> <br>
+	<br>
+	<input type="submit" value="Submit"><br>
+	<small><a href="medtech_views.html">(back to index)</a></small>
+
+</form>
+</section>
+</article>
+
+</div>
+</div>
+
+<!-- end overlay -->
+
 <body>
+
 
 <section>
 <article>
 <h2>Mouse Reports</h2>
 </section>
 </article>
-
 <section class="report">
 <article>
 <a href="medtech.html">Report 1 10/16/1994</a>
@@ -48,8 +128,21 @@ $( function() {
 </article>
 </section>
 
+<section class="report">
+<article>
+<p class="toggle">Toggle!</p>
+</article>
+</section>
+
 </body>
 
-
+<script>
+$(document).ready( function(){
+	$(".toggle").click(function(event) {
+    	event.preventDefault();
+    	$("div.overlay").fadeToggle("fast");
+	});
+});
+</script>
 
 </html> 
