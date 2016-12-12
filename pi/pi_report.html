@@ -27,6 +27,8 @@
 		</ul>
 	</article>
 
+	<h2>Rodent Condition</h2>
+
 	<article class="micephoto">
     	<img src="miceaffected.png"></img>
     </article>
@@ -57,6 +59,7 @@
 	
 	Topical:
 	<select name="Topical">
+		<option value="na">NA</option>
 		<option value="TAO">TAO</option>
 		<option value="OTAO">OTAO</option>
 		<option value="Lanolin">Lanolin</option>
@@ -65,14 +68,28 @@
 	
 	Systemic:
 	<select name="Systemic">
+		<option value="na">NA</option>
 		<option value="baytril">Baytril</option>
 		<option value="motrin">Motrin</option>
 		<option value="bupren">Bupren</option>
 	</select><br>
 	
-	...
+	Route:
+	<select name="Route">
+		<option value="na">NA</option>
+		<option value="po-wb">PO-WB</option>
+		<option value="po">PO</option>
+		<option value="sq">SQ</option>
+		<option value="other">Other</option>
+	</select><br>
 	
-	<br><br>
+	Dose:
+	<select name="Dose">
+		<option value="standard">Standard</option>
+		<option value="other">Other</option>
+	</select><br>
+	
+		<br>
 	
 	Contact Name <br><input type="text" name="contactname"> <br>
 	Details <br><input type="text" name="details"> <br><br>
@@ -81,7 +98,7 @@
 	Details <br><input type="text" name="details"> <br>
 	<br>
 	<input type="submit" value="Submit"><br>
-	<small><a href="medtech_views.html">(back to index)</a></small>
+	<small><a href="pi_views.html">(back to index)</a></small>
 
 </form>
 </section>

@@ -95,6 +95,10 @@ select{
 	text-decoration: none;
 }
 
+.report .urgent {
+	color: red;
+}
+
 .create-report {
 	text-align: center;
 	font-weight: bold;
