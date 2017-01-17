@@ -36,6 +36,38 @@ article{
 	width: 75%
 }
 
+table{
+display: block;
+border-collapse: none;
+border-spacing: 5px;
+border-color: black;
+width: 750px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10px;
+font-size: .75em;
+}
+
+tr{
+  background-color: white;
+  border: 1px solid lightgray;
+  border-raidus: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:10px;
+  
+	transition: 0.4s;
+}
+
+tr:hover{
+
+	background-color: #e6ffff;
+}
+
+td{
+padding: 0px 5px;
+}
+
 .micereport{
 	width: 960px;
 	
