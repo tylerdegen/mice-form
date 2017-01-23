@@ -16,6 +16,11 @@
 $( function() {
     $( "#datepicker" ).datepicker();
   } );
+  
+$(document).ready(function(){
+	$("#test").tablesorter();
+	}
+);
   </script>
   
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -49,23 +54,65 @@ $( function() {
 </section>
 </article>
 
-<section class="report">
-<article>
-<a href="lt_report.html">Report 1 12/12/2016 10:54am</a>
-</section>
-</article>
+<table id="test" class="tablesorter">
+<thead>
+<tr style="font-weight:bold">
+	<th class="name">Name &#x25BC</td>
+	<th class="date">Date &#x25BC</td>
+	<th class="time">Time &#x25BC</td>
+	<th class="PI">PI &#x25BC</td>
+	<th class="protocol">Protocol &#x25BC</td>
+	<th class="tech">Tech &#x25BC</td>
+	<th class="building">Building &#x25BC</td>
+	<th class="state">State of Case &#x25BC</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td class="name"><a href="lt_report.html">Report 1</a></td>
+	<td class="date">12/19/2016</td>
+	<td class="time">10:54</td>
+	<td class="PI">Caroline Jones</td>
+	<td class="protocol">Euthanize</td>
+	<td class="tech">Wyborn Loveat </td>
+	<td class="building">Pink Palace Apartments</td>
+	<td class="state">Haunted</td>
+</tr>
+<tr>
+	<td class="name"><a href="lt_report.html">Report 2</a></td>
+	<td class="date">12/20/2016</td>
+	<td class="time">2:34</td>
+	<td class="PI">Jim Halpert</td>
+	<td class="protocol">Medicate</td>
+	<td class="tech">Pam Beesly</td>
+	<td class="building">Scranton</td>
+	<td class="state">Urgent</td>
+</tr>
+<tr>
+	<td class="name"><a href="lt_report.html">Report 3</a></td>
+	<td class="date">12/21/2016</td>
+	<td class="time">5:20</td>
+	<td class="PI">Dorothy Gale</td>
+	<td class="protocol">Euthanize</td>
+	<td class="tech">Toto</td>
+	<td class="building">Kansas</td>
+	<td class="state">Urgent</td>
+</tr>
+<tr>
+	<td class="name"><a href="lt_report.html">Report 4</a></td>
+	<td class="date">1/01/2017</td>
+	<td class="time">8:42</td>
+	<td class="PI">Beyonce</td>
+	<td class="protocol">Watch</td>
+	<td class="tech">Jay Z</td>
+	<td class="building">Superdome</td>
+	<td class="state">Neutral</td>
+</tr>
 
-<section class="report">
-<article>
-<a href="lt_report.html">Report 2 12/12/2016 10:57</a>
-</section>
-</article>
 
-<section class="report">
-<article>
-<a href = "lt_report.html">Report 3 12/12/20/16 11:32 am</a>
-</article>
-</section>
+</tbody>
+
+</table>
 
 </body>
 

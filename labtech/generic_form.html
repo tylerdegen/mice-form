@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Mouse Form (Labtech)</title>
+<title>Generic Form (Labtech)</title>
 
     <style type="text/css">
       #container { position: relative; }
@@ -19,12 +19,12 @@
 <section>
 <article>
 
-<h2>Mouse Report</h2>
+<h2>Generic Form</h2>
 
 <form>
 
     <div id="container">
-      <canvas id="imageView" width="325" height="240">
+      <canvas id="imageView" width="360" height="360">
         <p>Unfortunately, your browser is currently unsupported by our web
         application.  We are sorry for the inconvenience. Please use one of the
         supported browsers listed below, or draw the image you want using an
@@ -107,9 +107,9 @@
 	</select> <br><br>
 	
 <!-- for if we need to load it into the canvas-->
-<img src="cutemice.png" alt="mice graphic" id="cutemice" style="display:none">
+<img src="cutedog.jpg" alt="mice graphic" id="cutedog" style="display:none">
 
-	<input type="submit" value="Submit"><br>
+	<input type="submit" value="Save"> <input type="submit" value="Submit"><br>
 	<small><a href="labtech_index.html">(back to index)</a></small>
 
 
@@ -148,6 +148,17 @@ Lab Contact Phone <br><input type="tel" name="labcontactphone"> <br><br>
 </section>
 </article>
 <script src="../draw.js"></script>
+<script>
+window.onload = function() {
+    drawDog();
+    var button = document.getElementById("reset");
+    if (button.addEventListener){
+    	button.addEventListener("click",drawDog, false);
+    } else if (button.attachEvent) {
+    	button.attachEvent("onclick", drawDog);
+    }
+}
+</script>
 </body>
 
 </html> 

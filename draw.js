@@ -111,15 +111,15 @@ function drawMouse() {
     console.log("draw mouse called!");
 }
 
-window.onload = function() {
-    drawMouse();
-    var button = document.getElementById("reset");
-    if (button.addEventListener){
-    	button.addEventListener("click",drawMouse, false);
-    } else if (button.attachEvent) {
-    	button.attachEvent("onclick", drawmouse);
-    }
+function drawDog() {
+    var c = document.getElementById("imageView");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("cutedog");
+    ctx.drawImage(img, 0, 0);
+    console.log("draw dog called!");
 }
+
+
 
 
 function dlCanvas(){
